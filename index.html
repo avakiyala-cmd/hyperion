@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Hyperion | AI Automation for Business</title>
+<meta name="description" content="We automate your business operations with AI. Document generation, data processing, client communication, and reporting. Fixed pricing. ROI guaranteed in 60 days.">
+<meta property="og:title" content="Hyperion - AI Automation for Business">
+<meta property="og:description" content="Custom AI solutions that save your team 20+ hours per week. Fixed pricing. 60-day ROI guarantee.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',-apple-system,sans-serif;color:#0f0f0f;background:#fff;line-height:1.7}
+a{color:inherit;text-decoration:none}
+
+/* Nav */
+nav{padding:20px 0;position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);z-index:100;border-bottom:1px solid rgba(0,0,0,0.05)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:20px;font-weight:800;letter-spacing:-0.03em}
+.nav-links{display:flex;gap:28px;font-size:14px;font-weight:500;align-items:center}
+.nav-links a:hover{color:#555}
+.nav-cta{background:#0f0f0f;color:#fff;padding:8px 20px;border-radius:6px;font-size:13px;font-weight:600}
+.nav-cta:hover{background:#333}
+
+/* Sections */
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+.section{padding:80px 0}
+.section-dark{background:#0f0f0f;color:#fff}
+.section-dark p{color:#aaa}
+.section-gray{background:#f7f7f7}
+
+/* Hero */
+.hero{padding:100px 0 80px;text-align:center}
+.hero-badge{display:inline-block;background:#f0f0f0;font-size:12px;font-weight:600;padding:6px 14px;border-radius:20px;margin-bottom:20px;color:#555}
+.hero h1{font-size:52px;font-weight:800;line-height:1.08;letter-spacing:-0.03em;margin-bottom:20px;max-width:800px;margin-left:auto;margin-right:auto}
+.hero p{font-size:18px;color:#555;max-width:580px;margin:0 auto 36px}
+.hero-btns{display:flex;gap:12px;justify-content:center}
+.btn{display:inline-block;padding:14px 32px;border-radius:8px;font-size:15px;font-weight:600}
+.btn-primary{background:#0f0f0f;color:#fff}
+.btn-primary:hover{background:#333}
+.btn-outline{background:#fff;color:#0f0f0f;border:1px solid #ddd}
+.btn-outline:hover{border-color:#999}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:48px 0;text-align:center}
+.stat-num{font-size:36px;font-weight:800;letter-spacing:-0.02em}
+.stat-label{font-size:13px;color:#888;margin-top:2px}
+
+/* Services grid */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service-card{border:1px solid #eee;border-radius:10px;padding:28px;transition:border-color 0.2s}
+.service-card:hover{border-color:#ccc}
+.service-card .icon{font-size:28px;margin-bottom:12px}
+.service-card h3{font-size:17px;font-weight:700;margin-bottom:6px}
+.service-card p{font-size:14px;color:#666;margin-bottom:12px}
+.service-card .price{font-size:14px;font-weight:600;color:#0f0f0f}
+.service-card .link{font-size:13px;color:#555;font-weight:600}
+.service-card .link:hover{color:#000}
+
+/* Industries */
+.industries{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.industry{background:#f8f8f8;border-radius:8px;padding:24px}
+.industry h3{font-size:16px;font-weight:700;margin-bottom:4px}
+.industry p{font-size:13px;color:#666;margin:0}
+
+/* Process */
+.process{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;text-align:center}
+.process-step{padding:20px 12px}
+.process-num{width:32px;height:32px;background:#0f0f0f;color:#fff;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;margin-bottom:10px}
+.process-step h4{font-size:14px;margin-bottom:4px}
+.process-step p{font-size:12px;color:#888}
+
+/* CTA */
+.final-cta{text-align:center;padding:80px 0}
+.final-cta h2{font-size:36px;font-weight:800;margin-bottom:12px;letter-spacing:-0.02em}
+.final-cta p{font-size:16px;color:#555;margin-bottom:28px}
+
+/* Footer */
+footer{padding:40px 0;border-top:1px solid #eee;text-align:center}
+.footer-links{display:flex;gap:24px;justify-content:center;margin-bottom:12px;font-size:13px}
+.footer-links a{color:#888}
+.footer-links a:hover{color:#333}
+.footer-copy{font-size:12px;color:#bbb}
+
+@media(max-width:768px){
+.hero h1{font-size:32px}
+.stats{grid-template-columns:1fr 1fr}
+.services-grid,.industries{grid-template-columns:1fr}
+.process{grid-template-columns:1fr 1fr}
+.hero-btns{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="nav-inner">
+<div class="logo">HYPERION</div>
+<div class="nav-links">
+<a href="#services">Services</a>
+<a href="#industries">Industries</a>
+<a href="#process">Process</a>
+<a href="/services/automation.html">AI Automation</a>
+<a href="mailto:avakiyala@gmail.com?subject=Inquiry%20-%20Hyperion%20AI" class="nav-cta">Get in touch</a>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<div class="hero-badge">AI SOLUTIONS FOR BUSINESS</div>
+<h1>We automate the work your team shouldn't be doing manually</h1>
+<p>Custom AI systems that handle document generation, data processing, client communication, and reporting. Your team focuses on what matters. We build the machines that handle the rest.</p>
+<div class="hero-btns">
+<a href="mailto:avakiyala@gmail.com?subject=Free%20Automation%20Audit%20-%20Hyperion&body=I'd%20like%20a%20free%20automation%20audit.%0A%0ACompany%3A%0AIndustry%3A%0ATeam%20size%3A%0ABiggest%20time%20sink%3A%0A" class="btn btn-primary">Book a free audit</a>
+<a href="#services" class="btn btn-outline">See what we build</a>
+</div>
+</div>
+</section>
+
+<section class="section-dark">
+<div class="container">
+<div class="stats">
+<div><div class="stat-num" style="color:#fff">40%</div><div class="stat-label">average cost reduction</div></div>
+<div><div class="stat-num" style="color:#fff">20hrs</div><div class="stat-label">saved per team per week</div></div>
+<div><div class="stat-num" style="color:#fff">14 days</div><div class="stat-label">to first deployment</div></div>
+<div><div class="stat-num" style="color:#fff">60 days</div><div class="stat-label">ROI guarantee</div></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="services">
+<div class="container">
+<h2 style="font-size:32px;font-weight:800;margin-bottom:8px;letter-spacing:-0.02em">What we build</h2>
+<p style="font-size:15px;color:#666;margin-bottom:36px">Every engagement is scoped, quoted, and delivered at a fixed price. No hourly billing. No surprises.</p>
+<div class="services-grid">
+<div class="service-card">
+<div class="icon">📄</div>
+<h3>Document Automation</h3>
+<p>Auto-generate proposals, contracts, reports, and client communications from your data and templates.</p>
+<div class="price">From $5,000</div>
+<a href="/services/automation.html" class="link">Learn more &rarr;</a>
+</div>
+<div class="service-card">
+<div class="icon">📊</div>
+<h3>Business Intelligence</h3>
+<p>AI dashboards, anomaly detection, and natural language queries on your business data.</p>
+<div class="price">From $10,000</div>
+<a href="/services/intelligence.html" class="link">Learn more &rarr;</a>
+</div>
+<div class="service-card">
+<div class="icon">⚙️</div>
+<h3>Process Automation</h3>
+<p>End-to-end workflow automation for operations, finance, HR, and customer service.</p>
+<div class="price">From $15,000</div>
+<a href="/services/automation.html" class="link">Learn more &rarr;</a>
+</div>
+<div class="service-card">
+<div class="icon">🏷️</div>
+<h3>White-Label AI Platform</h3>
+<p>AI tools running on your infrastructure, your domain, your brand. Resell to your clients.</p>
+<div class="price">From $2,000/mo</div>
+<a href="/services/whitelabel.html" class="link">Learn more &rarr;</a>
+</div>
+<div class="service-card">
+<div class="icon">📈</div>
+<h3>Financial Modeling & CFO</h3>
+<p>Custom financial models, board reporting, fundraising support, and fractional CFO services.</p>
+<div class="price">From $2,500</div>
+<a href="/services/finance.html" class="link">Learn more &rarr;</a>
+</div>
+<div class="service-card">
+<div class="icon">🔍</div>
+<h3>Market Research</h3>
+<p>AI-powered competitive analysis, market sizing, due diligence, and strategic reports.</p>
+<div class="price">From $2,500</div>
+<a href="/services/research.html" class="link">Learn more &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section-gray" id="industries">
+<div class="container">
+<h2 style="font-size:32px;font-weight:800;margin-bottom:8px;letter-spacing:-0.02em">Industries we serve</h2>
+<p style="font-size:15px;color:#666;margin-bottom:36px">We specialize in knowledge-work automation - businesses where teams spend time on documents, data, and communication.</p>
+<div class="industries">
+<div class="industry"><h3>Professional Services</h3><p>Law firms, accounting, consulting. Automate proposals, client reports, billing summaries, and compliance documents.</p></div>
+<div class="industry"><h3>Financial Services</h3><p>Banks, funds, fintech. Automated portfolio reports, risk analysis, regulatory filings, and client communications.</p></div>
+<div class="industry"><h3>Real Estate</h3><p>Brokers, property managers, developers. Auto-generate listings, market analyses, lease abstracts, and investor reports.</p></div>
+<div class="industry"><h3>Agencies & Marketing</h3><p>Content production, client reporting, proposal generation, and campaign analysis at 10x the speed.</p></div>
+<div class="industry"><h3>Healthcare Administration</h3><p>Patient communication, insurance processing, compliance documentation, and operational reporting.</p></div>
+<div class="industry"><h3>Government & Education</h3><p>Grant applications, policy documents, public communications, budget reports, and constituent responses.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="process">
+<div class="container">
+<h2 style="font-size:32px;font-weight:800;margin-bottom:8px;letter-spacing:-0.02em;text-align:center">How we work</h2>
+<p style="font-size:15px;color:#666;margin-bottom:36px;text-align:center">From first call to deployed system in 2-6 weeks.</p>
+<div class="process">
+<div class="process-step"><div class="process-num">1</div><h4>Free Audit</h4><p>30-min call. We map your workflows and identify the top 3 automation opportunities.</p></div>
+<div class="process-step"><div class="process-num">2</div><h4>Fixed Quote</h4><p>Specific deliverables, timeline, and price. No surprises. You approve before we start.</p></div>
+<div class="process-step"><div class="process-num">3</div><h4>Build</h4><p>We build and test with your real data. You see progress weekly.</p></div>
+<div class="process-step"><div class="process-num">4</div><h4>Deploy</h4><p>Install in your workflow. Full team training included.</p></div>
+<div class="process-step"><div class="process-num">5</div><h4>Optimize</h4><p>60 days of tuning. We guarantee ROI or refund the difference.</p></div>
+</div>
+</div>
+</section>
+
+<section class="final-cta">
+<div class="container">
+<h2>Ready to stop doing work a machine should handle?</h2>
+<p>Free 30-minute automation audit. We'll identify your highest-ROI opportunities and tell you exactly what it costs. No commitment.</p>
+<a href="mailto:avakiyala@gmail.com?subject=Free%20Automation%20Audit&body=I'd%20like%20a%20free%20automation%20audit.%0A%0ACompany%3A%0AIndustry%3A%0ATeam%20size%3A%0ABiggest%20time%20sink%3A%0A" class="btn btn-primary">Book your free audit</a>
+<p style="font-size:13px;color:#999;margin-top:16px">avakiyala@gmail.com &middot; Hyperion FZCO &middot; Dubai, UAE</p>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-links">
+<a href="#services">Services</a>
+<a href="#industries">Industries</a>
+<a href="/services/automation.html">AI Automation</a>
+<a href="/services/finance.html">Financial Services</a>
+<a href="/services/research.html">Market Research</a>
+<a href="https://tools-three-blush.vercel.app">Free AI Tools</a>
+<a href="https://avaflow801.gumroad.com">Templates</a>
+</div>
+<div class="footer-copy">Hyperion FZCO &middot; IFZA Dubai Silicon Oasis &middot; License 25013</div>
+</div>
+</footer>
+
+</body>
+</html>
